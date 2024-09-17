@@ -1,0 +1,73 @@
+/* CSS untuk mempercantik tampilan halaman */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Menghindari scrollbar muncul */
+    height: 100vh;
+    background: url('makrab.jpg') no-repeat center center fixed; /* Ganti dengan path gambar latar belakang */
+    background-size: cover; /* Menyesuaikan ukuran gambar latar belakang */
+}
+
+#bg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center; /* Menyusun teks di tengah kontainer */
+    background-color: rgba(255, 255, 255, 0.8); /* Warna kotak dengan sedikit transparansi */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Roboto'; /* Menggunakan font Montserrat */
+    color: #FF6347; /* Warna Tomato */
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    max-width: 400px; /* Maksimal lebar tombol */
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin: 0 0 10px 0; /* Menambahkan margin bawah untuk jarak antar paragraf */
+    line-height: 1.6; /* Jarak antar baris teks */
+    text-align: left; /* Mengatur teks rata kiri */
+    font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+    color: black;
+}
+
+#message h1 {
+    font-size: 26px; /* Ukuran font yang lebih besar */
+    font-family: 'Roboto', sans-serif; /* Menggunakan font Pacifico */
+    color: black;
+}

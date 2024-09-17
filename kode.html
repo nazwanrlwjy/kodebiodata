@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pertanyaan Tanda Tangan</title>
+    <link rel="stylesheet" href="style.css"> <!-- Menghubungkan ke file CSS -->
+    <script>
+        function checkAnswer() {
+            var answer = document.querySelector('input[name="signature"]:checked').value;
+
+            if (answer === "sudah") {
+                document.getElementById("message").innerHTML = `
+                <h1>INI KODENYA, SEMANGAT TERUS YA!🤗 </h1>
+                <p>Geraldi Akmal        = ZWA/17/01</p>
+                <p>Otavia Ulandari      = ZWA/17/02</p>
+                <p>Fedora               = ZWA/17/03</p>
+                <h1>TERIMA KASIH 😊</h1>
+                `;
+            } else {
+                document.getElementById("message").innerHTML = "<h1>Buat janjian Yuk ;)</h1>";
+            }
+
+            // Menyembunyikan form setelah jawaban diberikan
+            document.getElementById("form-container").style.display = "none";
+        }
+    </script>
+</head>
+
+<body>
+    <div id="bg-container">
+        <div class="container">
+            <div id="form-container">
+                <h1>Apakah kamu sudah mendapatkan tanda tangan?</h1>
+                <form>
+                    <label>
+                        <input type="radio" name="signature" value="sudah">
+                        Sudah
+                    </label><br>
+                    <label>
+                        <input type="radio" name="signature" value="belum">
+                        Belum
+                    </label><br>
+                    <button type="button" onclick="checkAnswer()">Submit</button>
+                </form>
+            </div>
+            <div id="message"></div> <!-- Area untuk menampilkan pesan setelah submit -->
+        </div>
+    </div>
+</body>
+
+</html>
